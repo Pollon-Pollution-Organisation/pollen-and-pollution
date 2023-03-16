@@ -4,13 +4,12 @@ import { useState, useEffect } from 'react'
 
 export default function PollenAPI() {
 
-    useEffect(() => {
         const options = {
             method: 'GET',
             url: 'https://air-quality.p.rapidapi.com/current/airquality',
             params: { lon: '-73.00597', lat: '40.71427' },
             headers: {
-                'X-RapidAPI-Key': '6293641afdmshf1dda5cd5fe8c34p1388c5jsn3acc5d8ed8ba',
+                'X-RapidAPI-Key': '326b80785amsh8543d3e232cdaa9p1b5362jsndeee73e28081',
                 'X-RapidAPI-Host': 'air-quality.p.rapidapi.com'
             }
         };
@@ -28,9 +27,6 @@ export default function PollenAPI() {
         }).catch(function (error) {
             console.error(error);
         });
-
-    })
-
     //export this to the air card component 
 
 
