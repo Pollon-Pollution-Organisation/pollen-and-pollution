@@ -16,7 +16,15 @@ export default function PollenAPI() {
         };
 
         axios.request(options).then(function (response) {
+            console.log(options)
             console.log(response.data);
+            //returning undefined
+            console.log(response.data.predominant_pollen_type);
+            console.log(response.data.pollen_level_tree);
+            console.log(response.data.pollen_level_grass);
+            console.log(response.data.pollen_level_weed);
+            console.log(response.data.mold_level);
+
         }).catch(function (error) {
             console.error(error);
         });
