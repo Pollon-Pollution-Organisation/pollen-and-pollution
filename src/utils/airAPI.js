@@ -1,4 +1,27 @@
+import axios from "axios";
 
+
+function AirAPI() {
+
+
+const options = {
+  method: 'GET',
+  url: 'https://air-quality.p.rapidapi.com/forecast/airquality',
+  params: {lat: '35.779', lon: '-78.638', hours: '72'},
+  headers: {
+    'X-RapidAPI-Key': '326b80785amsh8543d3e232cdaa9p1b5362jsndeee73e28081',
+    'X-RapidAPI-Host': 'air-quality.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
+}
+
+export default AirAPI
 
 /*import axios from "axios";
 import { useState, useEffect } from 'react'
