@@ -1,6 +1,7 @@
 
 import { HashRouter as HashRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home/Home';
+import Header from './components/Header/Header';
 import Pollen from './components/PollenPage/PollenPage';
 import PollenAPI from './utils/pollenAPI';
 import AirAPI from './utils/airAPI';
@@ -16,10 +17,11 @@ function App() {
   return (
     <div>
       <React.StrictMode>
+
         <AirAPI />
         <PollenAPI />
         <HashRouter>
-
+          <Header />
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/pollen" element={<Pollen />} />
