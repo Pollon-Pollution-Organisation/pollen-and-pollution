@@ -25,9 +25,9 @@ export default function Home() {
                 <div className='min-h-screen'>
                     <section>
 
-                      
-{// <SearchBar setPollenData={setPollenData} setairQualData={setairQualData} /> }
-                             {//     <h1>{pollenData ? pollenData.city_name : 'loading'}</h1>  }
+
+                        <SearchBar setPollenData={setPollenData} setairQualData={setairQualData} />
+                        <h1>{pollenData ? pollenData.city_name : 'loading'}</h1>
 
                         <div className="flex justify-center">
                             <h3 className='text-white text-3xl py-2 text-blackfont-medium'>
