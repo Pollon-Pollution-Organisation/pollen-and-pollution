@@ -5,15 +5,15 @@ export default function AQI() {
     return (
         <div>
             <main className='bg-yellow-400 px-10'>
-                <div className='min-h-screen'>
-                    <section>
+                
+                    
                         <div className="flex justify-center">
                             <h3 className='text-5xl py-2 text-gray-600 font-medium'>
                                 Air Quality Index
                             </h3>
                         </div>
-                    </section>
-                </div>
+                    
+                
                 <section className="container mx-auto p-6 font-mono">
                     <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
                         <div className="w-full overflow-x-auto">
