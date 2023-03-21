@@ -20,10 +20,5 @@ export function LatLongAPI(city) {
         }
     };
 
-    axios.request(options).then(function (response) {
-        console.log(response.data);
-        return response.data
-    }).catch(function (error) {
-        console.error(error);
-    });
+   return axios.request(options)
 }
