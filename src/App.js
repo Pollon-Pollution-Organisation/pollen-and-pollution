@@ -12,6 +12,9 @@ import AQI from './components/AirQualityIndexPage/AQI';
 import PollenTypes from './components/PollenTypesPage/PollenTypesPage';
 import React from 'react';
 
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+
 
 function App() {
   return (
@@ -21,7 +24,7 @@ function App() {
         <AirAPI />
         <PollenAPI />
         <HashRouter>
-          <Header />
+          <Navbar/>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/pollen" element={<Pollen />} />
@@ -29,6 +32,7 @@ function App() {
             <Route exact path="/AQI" element={<AQI />} />
             <Route exact path="/pollen_types" element={<PollenTypes />} />
           </Routes>
+          <Footer/>
         </HashRouter>
       </React.StrictMode>
 
