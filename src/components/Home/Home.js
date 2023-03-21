@@ -1,11 +1,17 @@
 import { GiDrippingHoney, } from "react-icons/gi";
 
-import React from 'react';
 
-
+import SearchBar from "./SearchBar";
+import { useState, React } from 'react'
 
 
 export default function Home() {
+    const [pollenData, setPollenData] = useState(null);
+    const [airQualData, setairQualData] = useState(null);
+    //update state and pass as props to search bar.
+    //data published {pollenData ? pollenData.city_name : 'loading'} with ternary operator for page load
+    //
+
     return (
         <>
             <div>
@@ -18,6 +24,11 @@ export default function Home() {
             <main className='bg-gray-900 px-10'>
                 <div className='min-h-screen'>
                     <section>
+
+                      
+{// <SearchBar setPollenData={setPollenData} setairQualData={setairQualData} /> }
+                             {//     <h1>{pollenData ? pollenData.city_name : 'loading'}</h1>  }
+
                         <div className="flex justify-center">
                             <h3 className='text-white text-3xl py-2 text-blackfont-medium'>
                                 Enter location here!
@@ -56,6 +67,7 @@ export default function Home() {
                                 <div
                                     className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600">
                                     Pollen
+
                                 </div>
                                 <div className="p-6">
                                     <h5

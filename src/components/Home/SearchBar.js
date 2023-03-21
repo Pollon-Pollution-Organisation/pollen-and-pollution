@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
-import {LatLongAPI} from "../../utils/latLong.js"
-import {PollenAPI} from "../../utils/pollenAPI.js"
+import {LatLongAPI} from "../../utils/latLong"
+import {PollenAPI} from "../../utils/pollenAPI"
 import {AirAPI} from "../../utils/airAPI"
 
 
-export default function SearchBar() {
+export default function SearchBar(props) {
+    //props passed in from home.js
 
     const [searchQuery, setsearchQuery] = useState(null)
 
@@ -16,11 +17,14 @@ export default function SearchBar() {
     const logValue = () => {
         console.log(searchQuery);
         LatLongAPI(searchQuery).then(function(response) {
-            long = response.data.lon
-            lat = response.data.lat
+            
+           let long = response.data[0].lon
+           let lat = response.data[0].lat
+           console.log(lat)
+           console.log(long)
 
-            PollenAPI(long, lat)
-            AirAPI(long, lat)
+            PollenAPI(long, lat, props.setPollenData)
+            AirAPI(long, lat, props.setairQualData)
         })
 
       };
@@ -47,7 +51,7 @@ export default function SearchBar() {
                         <span
                             className="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
                             id="basic-addon2">
-                            <button className="px-4 py-4 text-white bg-yellow-600 rounded-full " onClick={logValue}>
+                            <button className="px-4 py-4 text-white bg-yellow-600 rounded-full " onClick={logValue}> Search
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20"
