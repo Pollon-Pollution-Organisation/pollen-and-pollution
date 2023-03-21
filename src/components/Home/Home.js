@@ -15,12 +15,12 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </div>
 
-            <main className='bg-blue-300 px-10'>
+            <main className='bg-gray-900 px-10'>
                 <div className='min-h-screen'>
                     <section>
                         <div className="flex justify-center">
-                            <h3 className='text-5xl py-2 text-gray-600 font-medium'>
-                                Enter location here
+                            <h3 className='text-white text-3xl py-2 text-blackfont-medium'>
+                                Enter location here!
                             </h3>
                         </div>
                         <div className="flex justify-center">
@@ -52,76 +52,63 @@ export default function Home() {
 
                         <div className="flex justify-center">
                             <div
-                                className="block max-w-sm rounded-lg bg-white text-center shadow-lg dark:bg-neutral-700 mx-5">
+                                className="block max-w-sm rounded-lg bg-yellow-400 text-center shadow-lg mx-5">
                                 <div
-                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50">
-                                    Featured
+                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600">
+                                    Pollen
                                 </div>
                                 <div className="p-6">
                                     <h5
-                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800">
                                         Special title treatment
                                     </h5>
-                                    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                                    <p className="mb-4 text-base text-neutral-600 ">
                                         With supporting text below as a natural lead-in to additional
                                         content.
                                     </p>
                                     <button
                                         type="button"
-                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
                                         data-te-ripple-init
                                         data-te-ripple-color="light">
                                         Button
                                     </button>
                                 </div>
                                 <div
-                                    className="border-t-2 border-neutral-100 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50">
-                                    2 days ago
+                                    className="border-t-2 border-black py-3 px-6">
+                                    Pollen
                                 </div>
                             </div>
 
                             <div
-                                className="block max-w-sm rounded-lg bg-white text-center shadow-lg dark:bg-neutral-700 mx-5">
+                                className="block max-w-sm rounded-lg bg-yellow-400 text-center shadow-lg mx-5">
                                 <div
-                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50">
-                                    Featured
+                                    className="border-b-2 border-black py-3 px-6">
+                                    Air Quality
                                 </div>
                                 <div className="p-6">
                                     <h5
-                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800">
                                         Special title treatment
                                     </h5>
-                                    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                                    <p className="mb-4 text-base text-neutral-600 ">
                                         With supporting text below as a natural lead-in to additional
                                         content.
                                     </p>
                                     <button
                                         type="button"
-                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
                                         data-te-ripple-init
                                         data-te-ripple-color="light">
                                         Button
                                     </button>
                                 </div>
                                 <div
-                                    className="border-t-2 border-neutral-100 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50">
-                                    2 days ago
+                                    className="border-t-2 border-black py-3 px-6 dark:border-neutral-600">
+                                    Air Quality
                                 </div>
                             </div>
                         </div>
-
-
-                        <div className='text-center p-5'>
-                            <p className='text-md leading-5 text-gray-800 '>
-
-                            </p>
-
-                        </div>
-                        <div className="relative mx-auto rounded-full w-80 h-80 mt-10 overflow-hidden">
-
-                        </div>
-
-
                     </section>
                 </div>
             </main >
