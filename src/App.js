@@ -1,8 +1,6 @@
 
 import { HashRouter as HashRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home/Home';
-import PollenAPI from './utils/pollenAPI';
-import AirAPI from './utils/airAPI';
 import AQI from './components/AirQualityIndexPage/AQI';
 import PollenTypes from './components/PollenTypesPage/PollenTypesPage';
 import React from 'react';
@@ -14,9 +12,6 @@ function App() {
   return (
     <div>
       <React.StrictMode>
-
-        <AirAPI />
-        <PollenAPI />
         <HashRouter>
           <Navbar/>
           <Routes>
