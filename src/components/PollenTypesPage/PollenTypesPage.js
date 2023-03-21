@@ -14,6 +14,7 @@ function PollenTypesPage() {
 <h4> Tree Pollen </h4>
 <p>Season: March-June. Peak: May</p>
 <ul>
+    
     <li>Birch Pollen - most common</li>
     <li>Oak Pollen</li>
     <li>Pine Pollen</li>
