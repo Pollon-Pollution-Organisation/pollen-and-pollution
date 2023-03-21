@@ -6,14 +6,18 @@ const chrisKey = "326b80785amsh8543d3e232cdaa9p1b5362jsndeee73e28081"
 const georgeKey = ""
 const sophieKey = "01fc0c0291msh6c74688887e69bfp12b8f7jsnea920cfc819d"
 
-export default function PollenAPI() {
+export default function PollenAPI(long, lat) {
+
+    const [pollenData, setPollenData] = useState(null);
+
+    useEffect(() => {
 
         const options = {
             method: 'GET',
             url: 'https://air-quality.p.rapidapi.com/current/airquality',
-            params: { lon: '-73.00597', lat: '40.71427' },
+            params: { lon: long, lat: lat },
             headers: {
-                'X-RapidAPI-Key': sophieKey,
+                'X-RapidAPI-Key': lilKey,
                 'X-RapidAPI-Host': 'air-quality.p.rapidapi.com'
             }
         };
@@ -21,13 +25,14 @@ export default function PollenAPI() {
         axios.request(options).then(function (response) {
             console.log(options)
             const pollenData = response.data;
-          
+            setPollenData = pollenData
+
             const highestPollenType = pollenData.data[0].predominant_pollen_type
             const treePollen = pollenData.data[0].pollen_level_tree
             const grassPollen = pollenData.data[0].pollen_level_grass
             const weedPollen = pollenData.data[0].pollen_level_weed
             const moldLevel = pollenData.data[0].mold_level
- 
+
             console.log(highestPollenType);
             console.log(treePollen);
             console.log(grassPollen);
@@ -37,7 +42,7 @@ export default function PollenAPI() {
         }).catch(function (error) {
             console.error(error);
         });
-    //export this to the air card component 
-
+        //export this to the air card component 
+    }, [])
 
 }
