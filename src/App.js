@@ -1,11 +1,11 @@
 
 import { HashRouter as HashRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home/Home';
-import AQI from './components/AirQualityIndexPage/AQI';
-import PollenTypes from './components/PollenTypesPage/PollenTypesPage';
 import React from 'react';
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import AQI from './components/AirQualityIndexPage/AQI';
+import PollenTypes from './components/PollenTypesPage/PollenTypesPage';
 
 
 function App() {
