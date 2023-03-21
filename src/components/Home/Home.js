@@ -25,9 +25,7 @@ export default function Home() {
                 <div className='min-h-screen'>
                     <section>
 
-
                         <SearchBar setPollenData={setPollenData} setairQualData={setairQualData} />
-                        <h1>{pollenData ? pollenData.city_name : ''}</h1>
 
                         <div className="flex justify-center">
                             <div
@@ -90,6 +88,362 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
+
+
+
+
+
+                    <div className=" text-3xl text-white text-center mt-10" >
+                        <h2>Pollen Data</h2>
+
+                    </div>
+
+
+                    <div id="pollenGrid" className="grid grid-cols-4 gap-4 text-white gap-y-4 place-content-center">
+                        <div>
+
+                            <div
+                                className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10">
+
+                                <div
+
+                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600">
+                                    Pollen
+
+                                </div>
+                                <div className="p-6">
+                                    <h5
+                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800">
+                                        {pollenData ? pollenData.city_name : 'loading'}
+                                    </h5>
+                                    <p className="mb-4 text-base text-neutral-600 ">
+                                        With supporting text below as a natural lead-in to additional
+                                        content.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                        data-te-ripple-init
+                                        data-te-ripple-color="light">
+                                        Button
+                                    </button>
+                                </div>
+                                <div
+                                    className="border-t-2 border-black py-3 px-6">
+                                    Pollen
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div>
+                            <div
+                                className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10">
+                                <div
+                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600">
+                                    Pollen
+
+                                </div>
+                                <div className="p-6">
+                                    <h5
+                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800">
+                                        {pollenData ? pollenData.city_name : 'loading'}
+                                    </h5>
+                                    <p className="mb-4 text-base text-neutral-600 ">
+                                        With supporting text below as a natural lead-in to additional
+                                        content.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                        data-te-ripple-init
+                                        data-te-ripple-color="light">
+                                        Button
+                                    </button>
+                                </div>
+                                <div
+                                    className="border-t-2 border-black py-3 px-6">
+                                    Pollen
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div>
+                            <div
+                                className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10">
+                                <div
+                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600">
+                                    Pollen
+
+                                </div>
+                                <div className="p-6">
+                                    <h5
+                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800">
+                                        {pollenData ? pollenData.city_name : 'loading'}
+                                    </h5>
+                                    <p className="mb-4 text-base text-neutral-600 ">
+                                        With supporting text below as a natural lead-in to additional
+                                        content.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                        data-te-ripple-init
+                                        data-te-ripple-color="light">
+                                        Button
+                                    </button>
+                                </div>
+                                <div
+                                    className="border-t-2 border-black py-3 px-6">
+                                    Pollen
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div>
+                            <div
+                                className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10">
+                                <div
+                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600">
+                                    Pollen
+
+                                </div>
+                                <div className="p-6">
+                                    <h5
+                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800">
+                                        {pollenData ? pollenData.city_name : 'loading'}
+                                    </h5>
+                                    <p className="mb-4 text-base text-neutral-600 ">
+                                        With supporting text below as a natural lead-in to additional
+                                        content.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                        data-te-ripple-init
+                                        data-te-ripple-color="light">
+                                        Button
+                                    </button>
+                                </div>
+                                <div
+                                    className="border-t-2 border-black py-3 px-6">
+                                    Pollen
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div className=" text-3xl text-white text-center mt-10" >
+                        <h2>Pollen Data</h2>
+
+                    </div>
+
+
+                    <div id="airGrid" className="grid grid-cols-5 gap-4 gap-y-4 text-white">
+                        <div>
+                            <div
+                                className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10">
+                                <div
+                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600">
+                                    Pollen
+
+                                </div>
+                                <div className="p-6">
+                                    <h5
+                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800">
+                                        {pollenData ? pollenData.city_name : 'loading'}
+                                    </h5>
+                                    <p className="mb-4 text-base text-neutral-600 ">
+                                        With supporting text below as a natural lead-in to additional
+                                        content.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                        data-te-ripple-init
+                                        data-te-ripple-color="light">
+                                        Button
+                                    </button>
+                                </div>
+                                <div
+                                    className="border-t-2 border-black py-3 px-6">
+                                    Pollen
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div>
+                            <div
+                                className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10">
+                                <div
+                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600">
+                                    Pollen
+
+                                </div>
+                                <div className="p-6">
+                                    <h5
+                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800">
+                                        {pollenData ? pollenData.city_name : 'loading'}
+                                    </h5>
+                                    <p className="mb-4 text-base text-neutral-600 ">
+                                        With supporting text below as a natural lead-in to additional
+                                        content.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                        data-te-ripple-init
+                                        data-te-ripple-color="light">
+                                        Button
+                                    </button>
+                                </div>
+                                <div
+                                    className="border-t-2 border-black py-3 px-6">
+                                    Pollen
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div>
+                            <div
+                                className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10">
+                                <div
+                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600">
+                                    Pollen
+
+                                </div>
+                                <div className="p-6">
+                                    <h5
+                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800">
+                                        {pollenData ? pollenData.city_name : 'loading'}
+                                    </h5>
+                                    <p className="mb-4 text-base text-neutral-600 ">
+                                        With supporting text below as a natural lead-in to additional
+                                        content.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                        data-te-ripple-init
+                                        data-te-ripple-color="light">
+                                        Button
+                                    </button>
+                                </div>
+                                <div
+                                    className="border-t-2 border-black py-3 px-6">
+                                    Pollen
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div>
+                            <div
+                                className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10">
+                                <div
+                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600">
+                                    Pollen
+
+                                </div>
+                                <div className="p-6">
+                                    <h5
+                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800">
+                                        {pollenData ? pollenData.city_name : 'loading'}
+                                    </h5>
+                                    <p className="mb-4 text-base text-neutral-600 ">
+                                        With supporting text below as a natural lead-in to additional
+                                        content.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                        data-te-ripple-init
+                                        data-te-ripple-color="light">
+                                        Button
+                                    </button>
+                                </div>
+                                <div
+                                    className="border-t-2 border-black py-3 px-6">
+                                    Pollen
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        
+                        <div>
+                            <div
+                                className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10">
+                                <div
+                                    className="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600">
+                                    Pollen
+
+                                </div>
+                                <div className="p-6">
+                                    <h5
+                                        className="mb-2 text-xl font-medium leading-tight text-neutral-800">
+                                        {pollenData ? pollenData.city_name : 'loading'}
+                                    </h5>
+                                    <p className="mb-4 text-base text-neutral-600 ">
+                                        With supporting text below as a natural lead-in to additional
+                                        content.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                        data-te-ripple-init
+                                        data-te-ripple-color="light">
+                                        Button
+                                    </button>
+                                </div>
+                                <div
+                                    className="border-t-2 border-black py-3 px-6">
+                                    Pollen
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </main >
         </>
