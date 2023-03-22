@@ -8,57 +8,106 @@ import React from 'react';
 
 function PollenTypesPage() {
     return (
-        <div>
-<h3>Most common types of pollen: Tree, Grass, Weed</h3>
 
-<h4> Tree Pollen </h4>
-<p>Season: March-June. Peak: May</p>
-<ul>
-    
-    <li>Birch Pollen - most common</li>
-    <li>Oak Pollen</li>
-    <li>Pine Pollen</li>
-    <li>Alder Pollen</li>
-    <li>Hazel Pollen</li>
-    <li>Yew Pollen</li>
-    <li>Elm Pollen</li>
-    <li>Willow Pollen</li>
-    <li>Poplar Pollen</li>
-    <li>Ash Pollen</li>
-    <li>Plane Pollen</li>
-    <li>Lime Pollen</li>
-    </ul>
+        <main className='bg-yellow-400 px-10'>
 
-    <h4> Weed Pollen </h4>
-    <p>Season: April - September. Peak: July-August</p>
-<ul>
-    <li>Ragweed Pollen - realeses pollen until October causing autumal hayfever</li>
-    <li>Nettle Pollen</li>
-    <li>Dock Pollen</li>
-    <li>Mugwort Pollen</li>
-    <li>Plantain Pollen</li>
-    </ul>
 
-    
-    <h4> Grass Pollen </h4>
-    <p>Season: May - September. Peak: June-July</p>
-<ul>
-    <li>Only one grass pollen despite there being many types of grass</li>
-    </ul>
+            <div className="flex justify-center">
+                <h3 className='text-5xl py-2 text-gray-600 font-medium'>
+                    Types of Pollen
+                </h3>
+            </div>
 
-    <h4> Common Symptoms </h4>
-<ul>
-    <li>Sneeze - to force the pollen out</li>
-    <li>Watering Eyes - to wash the pollen partiles away</li>
-    <li>Runny Nose - to clear the nostrils of pollen</li>
 
-    <p> Other common symptoms may include itchy throat, difficulty breathing, itchy eyes, blocked nose</p>
+            <section className="container mx-auto p-6 font-mono">
+                <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
+                    <div className="w-full overflow-x-auto">
+                        <table className="w-full">
+                            <thead>
+                                <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
+                                    <th className="px-4 py-3">Tree</th>
+                                    <th className="px-4 py-3">Grass</th>
+                                    <th className="px-4 py-3">Weed</th>
+                                </tr>
+                            </thead>
 
-    </ul>
+                            <tbody className="bg-white">
+                                <tr clasNames="text-gray-700">
+                                    <td className="px-4 py-3 text-sm border">Season: March - June. Peak: May</td>
+                                    <td className="px-4 py-3 text-sm border">Season: May - September. Peak: June - July</td>
+                                    <td className="px-4 py-3 text-sm border">Season: April - September. Peak: July - August</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
 
-        </div>
+            <section className="container mx-auto p-6 font-mono">
+                <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
+                    <div className="w-full overflow-x-auto">
+                        <table className="w-full">
+                            <thead>
+                                <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
+                                    <th className="px-4 py-3">Types of Tree Pollen</th>
+                                </tr>
+                            </thead>
+
+                            <tbody className="bg-white">
+                                <tr clasNames="text-gray-700">
+                                    <td className="px-4 py-3 text-sm border">Birch Pollen (most common) followed by Pine, Alder, Hazel, Yew, Elm, Willow, Poplar, Ash, Plane and Lime</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section className="container mx-auto p-6 font-mono">
+                <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
+                    <div className="w-full overflow-x-auto">
+                        <table className="w-full">
+                            <thead>
+                                <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
+                                    <th className="px-4 py-3">Types of Grass Pollen</th>
+                                </tr>
+                            </thead>
+
+                            <tbody className="bg-white">
+                                <tr clasNames="text-gray-700">
+                                    <td className="px-4 py-3 text-sm border">There is only one grass pollen despite there being many types of grass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section className="container mx-auto p-6 font-mono">
+                <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
+                    <div className="w-full overflow-x-auto">
+                        <table className="w-full">
+                            <thead>
+                                <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
+                                    <th className="px-4 py-3">Types of Weed Pollen</th>
+                                </tr>
+                            </thead>
+
+                            <tbody className="bg-white">
+                                <tr clasNames="text-gray-700">
+                                    <td className="px-4 py-3 text-sm border">Ragweed (causes Autumnal hayfever), Nettle, Dock, Mugwort, Plantain</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
     )
-    
-};
+
+}
 
 export default PollenTypesPage
