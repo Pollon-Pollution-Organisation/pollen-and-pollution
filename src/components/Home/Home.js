@@ -177,11 +177,11 @@ export default function Home() {
                         </div>
 
 
-                        <div id="pollenGrid" className="grid grid-cols-4 gap-4  text-white gap-y-4 place-content-center">
+                        <div id="pollenGrid" className=" grid sm:grid-cols-4 grid-cols-2 gap-4  text-white gap-y-4 place-content-center"> 
                             <div>
 
                                 <div
-                                    className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10 ">
+                                    className="block  max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10 ">
 
                                     <div
                                         className=" text-2xl text-black border-b-2 border-black py-1 px-6 ">
@@ -280,7 +280,7 @@ export default function Home() {
                             <h2>{pollenData ? pollenData.city_name : ''}  Air Quality Levels</h2>
                         </div>
 
-                        <div id="airGrid" className="grid grid-cols-5 gap-4 gap-y-4 text-white">
+                        <div id="airGrid" className="grid sm:grid-cols-5 gap-4 gap-y-4 text-white grid-cols-2">
                             <div>
                                 <div
                                     className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10">
