@@ -199,7 +199,8 @@ export default function Home() {
                                             
 
                                         </h5>
-
+                                        <p className="mb-4 text-2xl text-black">
+                                              {pollenData ? pollenLevel() : ''} </p>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +221,8 @@ export default function Home() {
                                            Level {pollenData ? pollenData.data[0].pollen_level_weed : ''}
 
                                         </h5>
-
+                                        <p className="mb-4 text-2xl text-black">
+                                             {pollenData ? pollenLevel() : ''} </p>
 
                                     </div>
                                 </div>
@@ -242,7 +244,8 @@ export default function Home() {
                                            Level {pollenData ? pollenData.data[0].pollen_level_grass : ''}
 
                                         </h5>
-
+                                        <p className="mb-4 text-2xl text-black">
+                                             {pollenData ? pollenLevel() : ''} </p>
 
                                     </div>
                                 </div>
@@ -264,7 +267,8 @@ export default function Home() {
                                             Level {pollenData ? pollenData.data[0].mold_level : ''}
 
                                         </h5>
-
+                                        <p className="mb-4 text-2xl text-black">
+                                             {pollenData ? pollenLevel() : ''} </p>
                                     </div>
                                 </div>
                             </div>
