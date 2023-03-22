@@ -53,8 +53,8 @@ export default function SearchBar(props) {
                         <span
                             className="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
                             id="basic-addon2">
-                            <button className="px-4 py-4 text-black text-center bg-yellow-400 rounded-full " onClick={logValue}> Go
-                            <IconContext.Provider value={{size: "3em"}}>  <GiTreeBeehive /> <GiDrippingHoney /></IconContext.Provider>
+                            <button className="px-4 py-4 text-black text-center bg-yellow-400 rounded-full " onClick={logValue}> 
+                            <IconContext.Provider value={{size: "3em"}}>  <GiDrippingHoney /></IconContext.Provider>
                              
                             </button>
                         </span>

@@ -15,7 +15,7 @@ export function PollenAPI(long, lat, setPollenData) {
             url: 'https://air-quality.p.rapidapi.com/current/airquality',
             params: { lat: lat, lon: long },
             headers: {
-                'X-RapidAPI-Key': lilSpareKey,
+                'X-RapidAPI-Key': chrisKey,
                 'X-RapidAPI-Host': 'air-quality.p.rapidapi.com'
             }
         };

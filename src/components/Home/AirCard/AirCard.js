@@ -7,20 +7,20 @@ function AirCard(props) {
 
 
     const airQualData = props.setairQualData
-
+console.log(airQualData)
     //airQualData ? airQualData.data[0].aqi : ''
 
     //undefined on page load. might need to run in onClick
     const airLevel = () => {
-        if (airData.data[0].aqi < 50) {
+        if (airQualData.data[0].aqi < 50) {
             return "GOOD"
-        } else if (airData.data[0].aqi < 100) {
+        } else if (airQualData.data[0].aqi < 100) {
             return "MODERATE"
-        } else if (airData.data[0].aqi < 150) {
+        } else if (airQualData.data[0].aqi < 150) {
             return "NOT GOOD"
-        } else if (airData.data[0].aqi < 200) {
+        } else if (airQualData.data[0].aqi < 200) {
             return "BAD"
-        } else if (airData.data[0].aqi < 250 ) {
+        } else if (airQualData.data[0].aqi < 250 ) {
             return "UNHEALTHY"
         } else {
             return 'HAZARDOUS'
@@ -29,7 +29,7 @@ function AirCard(props) {
 
     return (
         <div>
-  
+
         </div>
     )
     
