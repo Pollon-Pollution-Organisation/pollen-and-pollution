@@ -17,7 +17,7 @@ export function AirAPI(long, lat, setairQualData) {
             url: 'https://air-quality.p.rapidapi.com/forecast/airquality',
             params: {lat: lat, lon: long, hours: '72'}, //grab lat & lon to store in vars
             headers: {
-                'X-RapidAPI-Key': 'e3e10500ddmsh6c294341a4f6acap16a65cjsna3fdb373f646',
+                'X-RapidAPI-Key': lilKey,
                 'X-RapidAPI-Host': 'air-quality.p.rapidapi.com'
             }
         };
