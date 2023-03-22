@@ -108,7 +108,7 @@ export default function Home() {
 
 
                                         <p className="mb-4 text-2xl text-black">
-                                            Pollen Level: {pollenData ? pollenLevel() : ''}
+                                             Pollen Level: {pollenData ? pollenLevel() : ''}
 
 
                                         </p>
@@ -195,7 +195,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {pollenData ? pollenData.data[0].pollen_level_tree : ''}
+                                            Level {pollenData ? pollenData.data[0].pollen_level_tree : ''}
                                             
 
                                         </h5>
@@ -217,7 +217,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {pollenData ? pollenData.data[0].pollen_level_weed : ''}
+                                           Level {pollenData ? pollenData.data[0].pollen_level_weed : ''}
 
                                         </h5>
 
@@ -239,7 +239,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {pollenData ? pollenData.data[0].pollen_level_grass : ''}
+                                           Level {pollenData ? pollenData.data[0].pollen_level_grass : ''}
 
                                         </h5>
 
@@ -261,7 +261,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {pollenData ? pollenData.data[0].mold_level : ''}
+                                            Level {pollenData ? pollenData.data[0].mold_level : ''}
 
                                         </h5>
 
@@ -288,7 +288,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {pollenData ? pollenData.data[0].o3 : ''}
+                                            {airQualData ? airQualData.data[0].o3 : ''} MG/M-3
 
                                         </h5>
                                     </div>
@@ -308,7 +308,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {pollenData ? pollenData.data[0].no2 : ''}
+                                            {airQualData ? airQualData.data[0].no2 : ''} MG/M-3
 
                                         </h5>
                                     </div>
@@ -329,7 +329,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {pollenData ? pollenData.data[0].so2 : ''}
+                                            {airQualData ? airQualData.data[0].so2 : ''} MG/M-3
 
                                         </h5>
                                     </div>
@@ -350,7 +350,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {pollenData ? pollenData.data[0].pm10 : ''}
+                                            {airQualData ? airQualData.data[0].pm10 : ''} MG/M-3
 
                                         </h5>
 
@@ -374,7 +374,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {pollenData ? pollenData.data[0].pm25 : ''}
+                                            {airQualData ? airQualData.data[0].pm25 : ''} MG/M-3
 
                                         </h5>
                                     </div>
