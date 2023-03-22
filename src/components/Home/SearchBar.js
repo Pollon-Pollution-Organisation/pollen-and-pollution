@@ -30,6 +30,7 @@ export default function SearchBar(props) {
 
       };
 
+
     return (
         <>
             <div className="flex justify-center">
