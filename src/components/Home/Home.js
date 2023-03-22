@@ -63,6 +63,7 @@ export default function Home() {
             return <div>VERY HIGH</div>
         }
     }
+
     
         return (
 
@@ -117,7 +118,7 @@ export default function Home() {
                                         className="border-t-2 border-black py-3 px-6">
                                         <button
                                             type="button"
-                                            className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:text-yellow-400  hover:bg-black hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                            className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:text-yellow-400  hover:bg-black hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-black focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-black active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
                                             data-te-ripple-init
                                             data-te-ripple-color="light"
                                             onClick={routeChangePollenType}
@@ -156,7 +157,7 @@ export default function Home() {
                                         className="border-t-2 border-black py-3 px-6">
                                         <button
                                             type="button"
-                                            className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:text-yellow-400  hover:bg-black hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                            className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:text-yellow-400  hover:bg-black hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-black focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-black active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
                                             data-te-ripple-init
                                             data-te-ripple-color="light"
                                             onClick={routeChangeAQI}>
@@ -312,7 +313,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {airQualData ? airQualData.data[0].no2 : ''} MG/M-3
+                                            {airQualData ? airQualData.data[0].no2Fixed(2) : ''} MG/M-3
 
                                         </h5>
                                     </div>
@@ -333,7 +334,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {airQualData ? airQualData.data[0].so2 : ''} MG/M-3
+                                            {airQualData ? airQualData.data[0].so2toFixed(2) : ''} MG/M-3
 
                                         </h5>
                                     </div>
