@@ -34,16 +34,16 @@ export default function SearchBar(props) {
     return (
         <>
             <div className="flex justify-center">
-                <h3 className='text-3xl py-5 text-gray-600 font-medium'>
-                    Enter location here
+                <h3 className='text-4xl py-3.5 text-white'>
+                    Enter location here!
                 </h3>
             </div>
             <div className="flex justify-center">
-                <div className="text-xs mb-3 xl:w-96">
+                <div className=" mb-1 xl:w-96">
                     <div className="relative mb-4 flex w-full flex-wrap items-stretch">
                         <input 
                             type="search"
-                            className="relative m-0 block w-[1%] min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-1 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary-600 focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200"
+                            className="relative m-0 block w-[5%] min-w-5 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-1 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary-600 focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200"
                             placeholder="Search"
                             id='searchBar'
                             aria-label="Search"
@@ -51,9 +51,9 @@ export default function SearchBar(props) {
                             onChange={handleInput}
                         />
                         <span
-                            className="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+                            className="input-group-text flex items-center whitespace-nowrap rounded px-2 text-base text-neutral-700 dark:text-neutral-200"
                             id="basic-addon2">
-                            <button className="px-4 py-4 text-black text-center bg-yellow-400 rounded-full " onClick={logValue}> 
+                            <button className="px-4 py-4 text-black text-center bg-yellow-400 rounded-full text-xs " onClick={logValue}> 
                             <IconContext.Provider value={{size: "3em"}}>  <GiDrippingHoney /></IconContext.Provider>
                              
                             </button>
