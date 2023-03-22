@@ -313,7 +313,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {airQualData ? airQualData.data[0].no2Fixed(2) : ''} MG/M-3
+                                            {airQualData ? airQualData.data[0].no2.toFixed(2) : ''} MG/M-3
 
                                         </h5>
                                     </div>
@@ -334,7 +334,7 @@ export default function Home() {
                                         <h5
 
                                             className="mb-2 text-3xl font-medium leading-tight text-black">
-                                            {airQualData ? airQualData.data[0].so2toFixed(2) : ''} MG/M-3
+                                            {airQualData ? airQualData.data[0].so2.toFixed(2) : ''} MG/M-3
 
                                         </h5>
                                     </div>
