@@ -9,11 +9,11 @@ import React from 'react';
 function PollenTypesPage() {
     return (
 
-        <main className='bg-gray-900 px-10'>
+        <main className='bg-gray-900 px-10 font-mono'>
 
 
             <div className="flex justify-center">
-                <h3 className='text-5xl py-2 text-gray-600 font-medium'>
+                <h3 className='text-5xl py-8 text-white font-medium'>
                     Types of Pollen
                 </h3>
             </div>
@@ -24,7 +24,7 @@ function PollenTypesPage() {
                     <div className="w-full overflow-x-auto">
                         <table className="w-full">
                             <thead>
-                                <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-yellow-400 uppercase border-b border-black py-3 px-6">
+                                <tr className="text-md font-semibold tracking-wide text-left text-black bg-yellow-400 uppercase border-b border-black py-3 px-6">
                                     <th className="px-4 py-3">Tree</th>
                                     <th className="px-4 py-3">Grass</th>
                                     <th className="px-4 py-3">Weed</th>
@@ -52,52 +52,52 @@ function PollenTypesPage() {
 
                         <div
 
-                            className="border-b-2 font-semibold text-gray-700 border-black py-3 px-6 dark:border-neutral-600">
+                            className="border-b-2 font-semibold text-black border-black py-3 px-6">
                             Types of tree pollen
 
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Birch Pollen (this is the most common)
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Pine
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Alder
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Hazel
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Yew
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Elm
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Willow
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Poplar
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Ash
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Plane
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Lime
                         </div>
                     </div>
@@ -114,12 +114,12 @@ function PollenTypesPage() {
 
                         <div
 
-                            className="border-b-2 font-semibold text-gray-700 border-black py-3 px-6 dark:border-neutral-600">
+                            className="border-b-2 font-semibold text-black border-black py-3 px-6">
                             Types of grass pollen
 
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             There is only one grass pollen despite there being many types of grass
                         </div>
                     </div>
@@ -135,28 +135,28 @@ function PollenTypesPage() {
 
                         <div
 
-                            className="border-b-2 font-semibold text-gray-700 border-black py-3 px-6 dark:border-neutral-600">
+                            className="border-b-2 font-semibold text-black border-black py-3 px-6">
                             Types of weed pollen
 
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Ragweed
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Nettle
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Dock
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Mugwort
                         </div>
                         <div
-                            className="border-t-2 text-gray-700 border-black py-3 px-6">
+                            className="border-t-2 text-black border-black py-3 px-6">
                             Plantain
                         </div>
                     </div>
