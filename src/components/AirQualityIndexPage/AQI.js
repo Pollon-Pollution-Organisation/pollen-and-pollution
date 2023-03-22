@@ -4,7 +4,7 @@ import React from "react";
 export default function AQI() {
     return (
         <div>
-            <main className='bg-yellow-400 px-10'>
+            <main className='bg-gray-900 px-10'>
                 
                     
                         <div className="flex justify-center">
@@ -19,7 +19,7 @@ export default function AQI() {
                         <div className="w-full overflow-x-auto">
                             <table className="w-full">
                                 <thead>
-                                    <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
+                                    <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-yellow-400 uppercase border-b border-gray-600">
                                         <th className="px-4 py-3">Band</th>
                                         <th className="px-4 py-3">Index</th>
                                         <th className="px-4 py-3">Ozone ----- (µg m−3)</th>
@@ -30,7 +30,7 @@ export default function AQI() {
                                     </tr>
                                 </thead>
 
-                                <tbody className="bg-white">
+                                <tbody className="bg-yellow-400">
                                     <tr clasNames="text-gray-700">
                                         <td className="px-4 py-3 border">
                                             <div className="flex items-center text-sm">
@@ -53,19 +53,19 @@ export default function AQI() {
                                         </td>
                                         <td className="px-4 py-3 text-ms font-semibold border">1</td>
                                         <td className="px-4 py-3 text-xs border">
-                                            <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 0 - 33 </span>
+                                            <span className="px-2 py-1 font-semibold leading-tight text-green-500 bg-green-100 rounded-sm"> 0 - 33 </span>
                                         </td>
                                         <td className="px-4 py-3 text-xs border">
-                                            <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 0 - 67 </span>
+                                            <span className="px-2 py-1 font-semibold leading-tight text-green-500 bg-green-100 rounded-sm"> 0 - 67 </span>
                                         </td>
                                         <td className="px-4 py-3 text-xs border">
-                                            <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 0 - 88 </span>
+                                            <span className="px-2 py-1 font-semibold leading-tight text-green-500 bg-green-100 rounded-sm"> 0 - 88 </span>
                                         </td>
                                         <td className="px-4 py-3 text-xs border">
-                                            <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 0 - 11 </span>
+                                            <span className="px-2 py-1 font-semibold leading-tight text-green-500 bg-green-100 rounded-sm"> 0 - 11 </span>
                                         </td>
                                         <td className="px-4 py-3 text-xs border">
-                                            <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> 0 - 16 </span>
+                                            <span className="px-2 py-1 font-semibold leading-tight text-green-500 bg-green-100 rounded-sm"> 0 - 16 </span>
                                         </td>
                                     </tr>
 
