@@ -14,8 +14,11 @@ Enter a city into the search bar, click search button, data retrieved and dislpa
 
 #### Credit
 Chris Cook
+
 Sophie Charlwood
+
 George Dodd
+
 Lil Corris
 
-###### Deployed Website
+#### Deployed Website
