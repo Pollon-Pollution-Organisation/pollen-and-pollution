@@ -81,7 +81,7 @@ export default function Home() {
     
                 </div>
 
-                <main className='bg-gray-900 px-10'>
+                <main className='bg-gray-900 px-10 font-mono'>
                     <div className='min-h-screen'>
                         <section>
 
@@ -92,21 +92,25 @@ export default function Home() {
                                     className="block max-w-sm rounded-lg bg-yellow-400 text-center shadow-lg mx-5">
                                     <div
                                         className="border-b-2 border-black py-3 px-6 text-xl">
-                                        Pollen Level Today
+                                        Today's Pollen Level
 
                                     </div>
                                     <div className="p-6">
-                                        <IconContext.Provider value={{ size: "3em", display:"inline"}}>  <GiPollenDust /> </IconContext.Provider>
+                                     
                                         <h5
                                             className="mb-2 text-xl font-medium leading-tight text-black">
                                             {pollenData ? pollenData.city_name : 'Location'}
-                                        </h5>
+                                        </h5>  
+                                         <IconContext.Provider value={{ size: "5em", display:"inline"}}>  <GiPollenDust /> </IconContext.Provider>
+
                                         <p className="mb-4 text-base text-black ">
                                             Highest Pollen Type: {pollenData ? pollenData.data[0].predominant_pollen_type : ''}
                                         </p>
 
-                                        <p className="mb-4 text-base text-neutral-600 ">
-                                            Pollen Level: {pollenData ? pollenLevel() : ''}
+
+                                        <p className="mb-4 text-2xl text-black">
+                                             Pollen Level: {pollenData ? pollenLevel() : ''}
+
 
                                         </p>
                                     </div>
@@ -132,17 +136,21 @@ export default function Home() {
                                         Current Air Quality
                                     </div>
                                     <div className="p-6">
-                                        <IconContext.Provider value={{ size: "3em" }}>  <TiWeatherWindyCloudy /> </IconContext.Provider>
+                                        
                                         <h5
                                             className="mb-2 text-xl font-medium leading-tight text-black">
                                             {airQualData ? airQualData.city_name : 'Location'}
                                         </h5>
+                                        <IconContext.Provider value={{ size: "5em" }}>  <TiWeatherWindyCloudy /> </IconContext.Provider> 
+
                                         <p className="mb-4 text-base text-black ">
                                             Overall Air Quality: {airQualData ? airQualData.data[0].aqi : ''}
                                         </p>
 
-                                        <p className="mb-4 text-base text-neutral-600 ">
+
+                                        <p className="mb-4 text-2xl text-black ">
                                             Air Level: {airQualData ? airLevel() : ''}
+
                                         </p>
                                     </div>
                                     <div
@@ -165,7 +173,7 @@ export default function Home() {
 
 
                         <div className=" text-3xl text-white text-center mt-10" >
-                            <h2> Current Pollen Levels {pollenData ? pollenData.city_name : ''} </h2>
+                            <h2> {pollenData ? pollenData.city_name : ''}  Pollen Levels </h2>
                         </div>
 
 
@@ -182,22 +190,21 @@ export default function Home() {
 
 
                                     <div className=" text-black justify-center p-3 text-s ">
-                                        <IconContext.Provider value={{ size: "3em" }}>  < GiTreehouse />  </IconContext.Provider>
+                                        <IconContext.Provider value={{ size: "2em" }}>  < GiTreehouse />  </IconContext.Provider>
 
 
                                         <h5
-                                            className="mb-2  text-3xl font-medium leading-tight text-neutral-800">
-                                            {pollenData ? pollenData.data[0].pollen_level_tree : ''}
-                                            
-                                        </h5>
 
+                                            className="mb-2 text-3xl font-medium leading-tight text-black">
+                                            Level {pollenData ? pollenData.data[0].pollen_level_tree : ''}
+                                            
+
+                                        </h5>
+                                        <p className="mb-4 text-2xl text-black">
+                                              {pollenData ? pollenLevel() : ''} </p>
                                     </div>
                                 </div>
                             </div>
-
-
-
-
 
 
                             <div>
@@ -208,19 +215,19 @@ export default function Home() {
                                         Weed
                                     </div>
                                     <div className=" text-black text-center p-3 text-s">
-                                        <IconContext.Provider value={{ size: "3em" }}>  <GiPlantRoots /> </IconContext.Provider>
+                                        <IconContext.Provider value={{ size: "2em" }}>  <GiPlantRoots /> </IconContext.Provider>
                                         <h5
-                                            className="mb-2 text-xl font-medium leading-tight text-neutral-800">
-                                            {pollenData ? pollenData.data[0].pollen_level_weed : ''}
-                                        </h5>
 
+                                            className="mb-2 text-3xl font-medium leading-tight text-black">
+                                           Level {pollenData ? pollenData.data[0].pollen_level_weed : ''}
+
+                                        </h5>
+                                        <p className="mb-4 text-2xl text-black">
+                                             {pollenData ? pollenLevel() : ''} </p>
 
                                     </div>
                                 </div>
                             </div>
-
-
-
 
 
                             <div>
@@ -231,18 +238,19 @@ export default function Home() {
                                         Grass
                                     </div>
                                     <div className=" text-black text-center p-3 text-s">
-                                        <IconContext.Provider value={{ size: "3em", verticalAlign: 'middle' }}>   <GiHighGrass /> </IconContext.Provider>
+                                        <IconContext.Provider value={{ size: "2em", verticalAlign: 'middle' }}>   <GiHighGrass /> </IconContext.Provider>
                                         <h5
-                                            className="mb-2 text-xl font-medium leading-tight text-neutral-800">
-                                            {pollenData ? pollenData.data[0].pollen_level_grass : ''}
-                                        </h5>
 
+                                            className="mb-2 text-3xl font-medium leading-tight text-black">
+                                           Level {pollenData ? pollenData.data[0].pollen_level_grass : ''}
+
+                                        </h5>
+                                        <p className="mb-4 text-2xl text-black">
+                                             {pollenData ? pollenLevel() : ''} </p>
 
                                     </div>
                                 </div>
                             </div>
-
-
 
 
                             <div>
@@ -253,23 +261,23 @@ export default function Home() {
                                         Mold
                                     </div>
                                     <div className=" text-black text-center p-3 text-s">
-                                        <IconContext.Provider value={{ size: "3em" }}>  <GiChemicalBolt /> </IconContext.Provider>
+                                        <IconContext.Provider value={{ size: "2em" }}>  <GiChemicalBolt /> </IconContext.Provider>
                                         <h5
-                                            className="mb-2 text-xl font-medium leading-tight text-neutral-800">
-                                            {pollenData ? pollenData.data[0].mold_level : ''}
-                                        </h5>
 
+                                            className="mb-2 text-3xl font-medium leading-tight text-black">
+                                            Level {pollenData ? pollenData.data[0].mold_level : ''}
+
+                                        </h5>
+                                        <p className="mb-4 text-2xl text-black">
+                                             {pollenData ? pollenLevel() : ''} </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
 
-
-
-
                         <div className=" text-3xl text-white text-center mt-10" >
-                            <h2>Air Quality Levels</h2>
+                            <h2>{pollenData ? pollenData.city_name : ''}  Air Quality Levels</h2>
                         </div>
 
                         <div id="airGrid" className="grid grid-cols-5 gap-4 gap-y-4 text-white">
@@ -281,18 +289,16 @@ export default function Home() {
                                         Ozone
                                     </div>
                                     <div className=" text-black text-center p-3 text-s">
-                                        <IconContext.Provider value={{ size: "3em" }}>  < BsGlobeAmericas />  </IconContext.Provider>
+                                        <IconContext.Provider value={{ size: "2em" }}>  < BsGlobeAmericas />  </IconContext.Provider>
                                         <h5
-                                            className="mb-2 text-xl font-medium leading-tight text-neutral-800">
-                                            {pollenData ? pollenData.data[0].o3 : ''}
+
+                                            className="mb-2 text-3xl font-medium leading-tight text-black">
+                                            {airQualData ? airQualData.data[0].o3 : ''} MG/M-3
+
                                         </h5>
                                     </div>
                                 </div>
                             </div>
-
-
-
-
 
                             <div>
                                 <div
@@ -303,18 +309,16 @@ export default function Home() {
 
                                     </div>
                                     <div className="text-black text-center p-3 text-s">
-                                        <IconContext.Provider value={{ size: "3em" }}>  < AiOutlineExperiment />  </IconContext.Provider>
+                                        <IconContext.Provider value={{ size: "2em" }}>  < AiOutlineExperiment />  </IconContext.Provider>
                                         <h5
-                                            className="mb-2 text-xl font-medium leading-tight text-neutral-800">
-                                            {pollenData ? pollenData.data[0].no2.toFixed(2) : ''}
+
+                                            className="mb-2 text-3xl font-medium leading-tight text-black">
+                                            {airQualData ? airQualData.data[0].no2Fixed(2) : ''} MG/M-3
+
                                         </h5>
                                     </div>
                                 </div>
                             </div>
-
-
-
-
 
 
                             <div>
@@ -326,18 +330,16 @@ export default function Home() {
 
                                     </div>
                                     <div className="text-black text-center p-3 text-s">
-                                        <IconContext.Provider value={{ size: "3em" }}>  <AiTwotoneExperiment />  </IconContext.Provider>
+                                        <IconContext.Provider value={{ size: "2em" }}>  <AiTwotoneExperiment />  </IconContext.Provider>
                                         <h5
-                                            className="mb-2 text-xl font-medium leading-tight text-neutral-800">
-                                            
-                                            {pollenData ? pollenData.data[0].so2.toFixed(2) : ''}
+
+                                            className="mb-2 text-3xl font-medium leading-tight text-black">
+                                            {airQualData ? airQualData.data[0].so2toFixed(2) : ''} MG/M-3
+
                                         </h5>
                                     </div>
                                 </div>
                             </div>
-
-
-
 
 
                             <div>
@@ -349,17 +351,18 @@ export default function Home() {
 
                                     </div>
                                     <div className="text-black text-center p-3 text-s">
-                                        <IconContext.Provider value={{ size: "3em" }}> <RxDotsVertical /> </IconContext.Provider>
+                                        <IconContext.Provider value={{ size: "2em" }}> <HiDotsVertical /> </IconContext.Provider>
                                         <h5
-                                            className="mb-2 text-xl font-medium leading-tight text-neutral-800">
-                                            {pollenData ? pollenData.data[0].pm10 : ''}
+
+                                            className="mb-2 text-3xl font-medium leading-tight text-black">
+                                            {airQualData ? airQualData.data[0].pm10 : ''} MG/M-3
+
                                         </h5>
 
 
                                     </div>
                                 </div>
                             </div>
-
 
 
 
@@ -368,21 +371,21 @@ export default function Home() {
                                     className="block max-w-xs rounded-lg bg-yellow-400 text-center shadow-lg mx-5 my-10">
                                     <div
                                         className=" text-2xl text-black border-b-2 border-black py-1 px-6">
-                                        PM25
+                                        PM2.5
 
                                     </div>
                                     <div className="text-black text-center p-3 text-s">
-                                        <IconContext.Provider value={{ size: "3em" }}> <HiDotsVertical /> </IconContext.Provider>
+                                        <IconContext.Provider value={{ size: "2em" }}> <RxDotsVertical /> </IconContext.Provider>
                                         <h5
-                                            className="mb-2 text-xl font-medium leading-tight text-neutral-800">
-                                            {pollenData ? pollenData.data[0].pm25 : ''}
+
+                                            className="mb-2 text-3xl font-medium leading-tight text-black">
+                                            {airQualData ? airQualData.data[0].pm25 : ''} MG/M-3
+
                                         </h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </main >
             </>

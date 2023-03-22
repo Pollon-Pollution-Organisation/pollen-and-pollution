@@ -34,7 +34,8 @@ export default function SearchBar(props) {
     return (
         <>
             <div className="flex justify-center">
-                <h3 className='text-3xl py-5 text-white font-medium'>
+
+                <h3 className='text-4xl py-3.5 text-white'>
                     Enter location here
                 </h3>
             </div>

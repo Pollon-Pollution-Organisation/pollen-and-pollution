@@ -4,22 +4,22 @@ import React from "react";
 export default function AQI() {
     return (
         <div>
-            <main className='bg-gray-900 px-10'>
+            <main className='bg-gray-900 px-10 font-mono'>
                 
                     
                         <div className="flex justify-center">
-                            <h3 className='text-5xl py-2 text-gray-600 font-medium'>
+                            <h3 className='text-5xl py-10 text-white font-medium'>
                                 Air Quality Index
                             </h3>
                         </div>
                     
                 
                 <section className="container mx-auto p-6 font-mono">
-                    <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
+                    <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg font-mono">
                         <div className="w-full overflow-x-auto">
                             <table className="w-full">
                                 <thead>
-                                    <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-yellow-400 uppercase border-b border-gray-600">
+                                    <tr className="text-md font-semibold tracking-wide text-left text-black bg-yellow-400 uppercase border-b border-gray-600">
                                         <th className="px-4 py-3">Band</th>
                                         <th className="px-4 py-3">Index</th>
                                         <th className="px-4 py-3">Ozone ----- (µg m−3)</th>
