@@ -39,7 +39,8 @@ export default function Home() {
                         <section>
 
                             <SearchBar setPollenData={setPollenData} setairQualData={setairQualData} />
-
+                            <PollenCard setPollenData={setPollenData} />
+                            <AirCard setairQualData={setairQualData} />
 
                             <div className="flex justify-center">
                                 <div

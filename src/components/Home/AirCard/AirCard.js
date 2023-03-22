@@ -1,16 +1,17 @@
 
 import React from 'react';
-import { useState, useEffect } from 'react'
-import {AirAPI} from "../../../utils/airAPI";
 
 
 //return overall low-high air pollution OR good-bad air quality result with clickable card taking user to AirPage for each pullutants results
 function AirCard(props) {
-    AirAPI(props.setairQualData)
-    
-    //getting error Air Data is not defined
 
-    const airLevel = (props) => {
+
+    const airQualData = props.setairQualData
+
+    //airQualData ? airQualData.data[0].aqi : ''
+
+    //undefined on page load. might need to run in onClick
+    const airLevel = () => {
         if (airData.data[0].aqi < 50) {
             return "GOOD"
         } else if (airData.data[0].aqi < 100) {
@@ -28,7 +29,7 @@ function AirCard(props) {
 
     return (
         <div>
-    {airLevel()}
+  
         </div>
     )
     
