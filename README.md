@@ -8,7 +8,17 @@ Our landing page has a search bar under the nav-bar for you to input your chosen
 We have further pages in the application explaining the data in detail. These are in the form of a chart. You can see exactly what the scientific figures mean.
 
 ### Usage
-Enter a city into the search bar, click search button, data retrieved and dislpayed in named sections, research returned figures further by going to the relevant 2chart page.
+Enter a city into the search bar and click search button.
+![Search bar](https://user-images.githubusercontent.com/117348764/227053971-216906d4-5c5c-4e55-90e6-69f9298c7ad9.png)
+
+The data is retrieved and dislpayed in named sections.
+![Retrieved data](https://user-images.githubusercontent.com/117348764/227053986-5120a020-e736-40a9-af5a-ae8d0b74e190.png)
+
+You can research returned figures further by going to the relevant chart pages by either clicking the buttons on the returned information or by using the navigation bar.
+
+![Other page search](https://user-images.githubusercontent.com/117348764/227053997-5f33321e-9aa9-4cee-96d3-53077b166b8a.png)
+
+![Nav bar](https://user-images.githubusercontent.com/117348764/227054011-2849c475-6e15-4592-90f3-c0d87914c5cf.png)
 
 #### Screenshots
 
@@ -22,5 +32,3 @@ George Dodd
 Lil Corris
 
 #### Deployed Website
-
-Web link: https://main--cool-genie-b80432.netlify.app/#/
