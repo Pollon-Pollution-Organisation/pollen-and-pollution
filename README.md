@@ -21,6 +21,8 @@ You can research returned figures further by going to the relevant chart pages b
 ![Nav bar](https://user-images.githubusercontent.com/117348764/227054011-2849c475-6e15-4592-90f3-c0d87914c5cf.png)
 
 #### Screenshots
+![sc1](https://user-images.githubusercontent.com/63071490/227316352-aca1702e-a989-4bfe-ad07-420beb45ff84.png)
+![sc2](https://user-images.githubusercontent.com/63071490/227316345-594ece71-5b9e-419e-9e3e-d99173b6e54e.png)
 
 #### Credit
 Chris Cook
